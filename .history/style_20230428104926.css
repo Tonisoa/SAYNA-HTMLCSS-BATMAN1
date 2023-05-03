@@ -1,0 +1,263 @@
+
+<!--@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');-->
+
+@font-face {
+    font-family:'Rajdhani';
+    src: url(./Assets/Police/Rajdhani-Medium.ttf);
+}
+:root{
+    --color-yellow:#FFFF00;
+    --yellow-light:#F8F184;
+    --blue:#19587D; 
+    --red:#B11313;
+    --black:#0D0E09;
+    --gradient-white:#eddebfaf;
+    --gradient-red:#89000948;
+    --grey:#C4C4C4;
+    --black:#000000;
+    --white:#FFFFFF;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    font-family: Rajdhani;
+    font-size: 36px;
+    font-weight: bold;
+    color:rgba(240, 234, 234, 0.89);
+    margin: 30px;
+}
+button{
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: 400;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+body{ 
+    background-color:black;
+    color:#FFFFFF;
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.up-bar{
+    border: #BCBBBD 2px solid;
+    position: absolute;
+    top: 132px;
+    left: 102px;
+    right: 102px;
+}
+
+/*Design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 35px;
+}
+ul{
+    list-style: none;
+}
+nav ul a{
+    color:var(--white);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Rajdhani;
+}
+nav ul a:hover{
+color:var(--yellow-light)
+}
+.logo:hover{
+    filter: invert(5%) sepia(15%) saturate(1708%) hue-rotate(10deg) brightness(107%) contrast(106%);
+}
+/*Partie en-tête hero*/
+#hero{
+    background-image: url(./Assets/Illustrations/Bathome1.png);
+    height: 600px;
+    background-position:top center;
+    background-color:#B11313;
+    background-size: cover;
+}
+#hero title{
+    margin: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 10px;
+    background: linear-gradient(
+80deg, var(--gradient-white), var(--gradient-red)
+    );
+    box-shadow: #0D0E09 15px 15px 40px;
+}
+#hero .fleche{
+    display:block;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    top: 200px;
+}
+.scroll icon{
+    margin-top: 20px;
+}
+.scroll .ic-sociaux{
+    padding: 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 0%;
+}
+/*design de l'en tete batman au cinema*/
+.Batman au cinema{
+display: flex;
+justify-content: space-between;
+}
+
+.Nemesis{
+    display: flex;
+    justify-content: space-between;
+}
+.allies{
+    display: flex;
+    justify-content: space-between;
+}
+/*design de la partie multimedia*/
+#Multimédia .button{
+    position: relative;
+    top: 150px;
+    background:none;
+}
+#Multimédia-button.right{
+    right: -80%;
+}
+#Multimédia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 30px auto;
+}
+#Multimédia .slider-image{
+    width: 90%;
+}
+#Multimédia .slider-content{
+    padding: 2px;
+    background-color:grey;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#Multimédia p{
+    font-size: 15px;
+}
+#Multimédia .yellow{
+    color: var(--color-yellow)
+}
+/*design de la partie formulaire*/
+#contact{
+    background-color:#243f4e7a;
+    padding: 100px;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font: size 20px;
+    margin-bottom: 20px;
+}
+#contact .titre{
+    display: block;
+    margin: 20px;
+}
+#contact .form input [type='email'],textarea{
+    display: block;
+    border: none;
+    border-bottom: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    background-color: transparent;
+    padding-top: 10px;
+}
+#contact .news{
+    margin: 15px;
+    border-bottom: 2px solid #C4C4C4;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 15px;
+}
+::placeholder{
+    color: #19587D;
+    font-size: 15px;
+}
+.btn-gp{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-gp label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 9px;
+    border-image: linear-gradient(60deg, rgb(88, 36, 36),rgb(26, 26, 80)) 1;
+}
+input [type='submit']{
+    display: block;
+    width: 250px;
+    margin: 20px;
+    padding: 5px;
+    cursor:pointer;
+}
+#citation{
+    margin: 100px;
+}
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#citation .citation-auteur{
+    font-size: 13px;
+    padding-top: 20px;
+    font-family: Rajdhani;
+}
+#citation .gm-fermant{
+    float: right;
+}
+/*design du footer*/
+footer{
+    margin-top: 150px;
+}
+footer .texte-footer{
+    text-align: center;
+    font-size: 15px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px;
+}
+footer .social-item{
+    padding: 10px;
+}
